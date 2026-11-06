@@ -1,0 +1,39 @@
+name: Update language stack
+
+on:
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/generate_language_stack.py"
+      - ".github/workflows/language-stack.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: language-stack
+  cancel-in-progress: true
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Generate language stack SVG
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USERNAME: jadhavdurvesh
+        run: python scripts/generate_language_stack.py
+      - name: Commit generated SVG
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update profile language stack"
+          file_pattern: assets/language-stack.svg
