@@ -3,7 +3,8 @@
 <img src="https://i.pinimg.com/originals/42/b4/22/42b4229a9ec3145edaa895b2415dd720.gif" alt="Banner" width="100%" />
 
 ## 📌 About Me
-- 💡 <em>✏️ A sentence about you and what you do.</em>
+- 💡 <em>AI/ML & Software Developer | Mechatronics Engineer Building AI systems, intelligent applications & open-source projects. Exploring LLMs, multi-agent systems
+.</em>
 
 ## 📊 GitHub Stats & Trophies
 <p align="center">
