@@ -22,12 +22,9 @@ Shapes the short profile story and positioning.
   </picture>
 </p>
 ## Skills
-Selected stack and skill badges will be generated from the GitHub profile and README strategy.
+
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/stack?username=jadhavdurvesh&theme=github-dark&mode=light" />
-    <img src="https://www.gitskins.com/api/section/stack?username=jadhavdurvesh&theme=github-dark" alt="jadhavdurvesh stack section" />
-  </picture>
+  <img src="assets/language-stack.svg" alt="Top 15 programming languages across my repositories" width="100%" />
 </p>
 ## GitHub Stats
 GitSkins stat widgets will use the **GitHub** theme.
