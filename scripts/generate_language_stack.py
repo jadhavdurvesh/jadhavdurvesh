@@ -87,7 +87,25 @@ def main():
     </rect>
   </g>""")
 
-    row_count = min(COLUMN_SIZE, len(ranked))
+    # Custom project technologies are displayed separately and never enter
+    # GitHub's detected-language ranking or percentage calculations.
+    custom_rows = []
+    custom_entries = [
+        (0, "DMJScript", "#58a6ff"),
+        (1, "Rudra", "#a371f7"),
+    ]
+    for column, label, color in custom_entries:
+        origin = col_origins[column]
+        y = top + COLUMN_SIZE * row_h
+        custom_rows.append(f"""
+  <g class="language">
+    <circle cx="{origin + 5}" cy="{y + 5}" r="6" fill="{color}"/>
+    <text x="{origin + 22}" y="{y + 11}" class="name">{escape(label)}</text>
+    <text x="{origin + 205}" y="{y + 10}" text-anchor="end" class="custom-tag">CUSTOM</text>
+    <rect x="{origin + 220}" y="{y - 3}" width="300" height="15" rx="7.5" fill="none" stroke="{color}" stroke-opacity=".65" stroke-dasharray="5 5"/>
+  </g>""")
+
+    row_count = min(COLUMN_SIZE, len(ranked)) + 1
     height = top + row_count * row_h + 48
 
     svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title desc">
@@ -116,6 +134,7 @@ def main():
       .scan{{fill:#58a6ff;font-size:15px;font-weight:700}}
       .name{{fill:#e6edf3;font-size:16px;font-weight:700}}
       .percentage{{fill:#c9d1d9;font-size:15px;font-weight:700;font-variant-numeric:tabular-nums}}
+      .custom-tag{{fill:#8b949e;font-size:10px;font-weight:800;letter-spacing:1px}}
       .language{{opacity:0;animation:fade .45s ease-out forwards}}
       @keyframes fade{{to{{opacity:1}}}}
     </style>
@@ -131,6 +150,7 @@ def main():
   <line x1="62" y1="145" x2="1138" y2="145" stroke="#30363d" stroke-opacity=".75"/>
   <line x1="600" y1="164" x2="600" y2="{height - 58}" stroke="#30363d" stroke-opacity=".65"/>
   {''.join(rows)}
+  {''.join(custom_rows)}
   <text x="1125" y="{height - 42}" text-anchor="end" fill="#6e7681" font-size="12">github.com/{USER}</text>
 </svg>
 '''
