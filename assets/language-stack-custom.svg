@@ -196,7 +196,7 @@
   <g class="language" style="animation-delay:0.765s">
     <circle cx="625" cy="480" r="6" fill="#d2a8ff"/>
     <text x="642" y="486" class="name">Erlang</text>
-    <text x="825" y="486" class="percentage" text-anchor="end">0.0%</text>
+    <text x="825" y="486" class="percentage" text-anchor="end">0.1%</text>
     <rect x="840" y="472" width="300" height="15" rx="7.5" fill="#30363d"/>
     <rect x="840" y="472" width="3.0" height="15" rx="7.5" fill="#d2a8ff">
       <animate attributeName="width" from="0" to="3.0" dur=".9s" begin="0.77s" fill="freeze"/>
