@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="652" viewBox="0 0 1200 652" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="695" viewBox="0 0 1200 695" role="img" aria-labelledby="title desc">
   <title id="title">jadhavdurvesh's Language Stack</title>
   <desc id="desc">Top 20 languages by source-code bytes across owned, non-fork, non-archived repositories, displayed in two columns.</desc>
   <defs>
@@ -24,20 +24,21 @@
       .scan{fill:#58a6ff;font-size:15px;font-weight:700}
       .name{fill:#e6edf3;font-size:16px;font-weight:700}
       .percentage{fill:#c9d1d9;font-size:15px;font-weight:700;font-variant-numeric:tabular-nums}
+      .custom-tag{fill:#8b949e;font-size:10px;font-weight:800;letter-spacing:1px}
       .language{opacity:0;animation:fade .45s ease-out forwards}
       @keyframes fade{to{opacity:1}}
     </style>
   </defs>
-  <rect x="10" y="10" width="1180" height="632" rx="30" fill="url(#outer)" stroke="#388bfd" stroke-opacity=".75"/>
-  <rect x="28" y="28" width="1144" height="596" rx="24" fill="url(#panel)" stroke="#388bfd" stroke-opacity=".42"/>
-  <rect x="28" y="28" width="1144" height="596" rx="24" fill="url(#glow)"/>
+  <rect x="10" y="10" width="1180" height="675" rx="30" fill="url(#outer)" stroke="#388bfd" stroke-opacity=".75"/>
+  <rect x="28" y="28" width="1144" height="639" rx="24" fill="url(#panel)" stroke="#388bfd" stroke-opacity=".42"/>
+  <rect x="28" y="28" width="1144" height="639" rx="24" fill="url(#glow)"/>
   <circle cx="1115" cy="86" r="4" fill="#58a6ff" opacity=".85"/>
   <circle cx="1115" cy="86" r="28" fill="none" stroke="#58a6ff" stroke-opacity=".07"/>
   <text x="62" y="91" class="heading">Language Stack</text>
   <text x="64" y="123" class="subtitle">Repository-weighted technologies · TOP 20</text>
   <text x="1120" y="91" class="scan" text-anchor="end">&gt; stack.scan</text>
   <line x1="62" y1="145" x2="1138" y2="145" stroke="#30363d" stroke-opacity=".75"/>
-  <line x1="600" y1="164" x2="600" y2="594" stroke="#30363d" stroke-opacity=".65"/>
+  <line x1="600" y1="164" x2="600" y2="637" stroke="#30363d" stroke-opacity=".65"/>
   
   <g class="language" style="animation-delay:0.000s">
     <circle cx="67" cy="179" r="6" fill="#58a6ff"/>
@@ -150,7 +151,7 @@
   <g class="language" style="animation-delay:0.540s">
     <circle cx="625" cy="265" r="6" fill="#d2a8ff"/>
     <text x="642" y="271" class="name">Go</text>
-    <text x="825" y="271" class="percentage" text-anchor="end">0.1%</text>
+    <text x="825" y="271" class="percentage" text-anchor="end">0.2%</text>
     <rect x="840" y="257" width="300" height="15" rx="7.5" fill="#30363d"/>
     <rect x="840" y="257" width="3.0" height="15" rx="7.5" fill="#d2a8ff">
       <animate attributeName="width" from="0" to="3.0" dur=".9s" begin="0.54s" fill="freeze"/>
@@ -219,5 +220,18 @@
       <animate attributeName="width" from="0" to="3.0" dur=".9s" begin="0.85s" fill="freeze"/>
     </rect>
   </g>
-  <text x="1125" y="610" text-anchor="end" fill="#6e7681" font-size="12">github.com/jadhavdurvesh</text>
+  
+  <g class="language">
+    <circle cx="67" cy="609" r="6" fill="#58a6ff"/>
+    <text x="84" y="615" class="name">DMJScript</text>
+    <text x="267" y="614" text-anchor="end" class="custom-tag">CUSTOM</text>
+    <rect x="282" y="601" width="300" height="15" rx="7.5" fill="none" stroke="#58a6ff" stroke-opacity=".65" stroke-dasharray="5 5"/>
+  </g>
+  <g class="language">
+    <circle cx="625" cy="609" r="6" fill="#a371f7"/>
+    <text x="642" y="615" class="name">Rudra</text>
+    <text x="825" y="614" text-anchor="end" class="custom-tag">CUSTOM</text>
+    <rect x="840" y="601" width="300" height="15" rx="7.5" fill="none" stroke="#a371f7" stroke-opacity=".65" stroke-dasharray="5 5"/>
+  </g>
+  <text x="1125" y="653" text-anchor="end" fill="#6e7681" font-size="12">github.com/jadhavdurvesh</text>
 </svg>
