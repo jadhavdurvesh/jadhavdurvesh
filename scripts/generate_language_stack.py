@@ -154,7 +154,7 @@ def main():
   <text x="1125" y="{height - 42}" text-anchor="end" fill="#6e7681" font-size="12">github.com/{USER}</text>
 </svg>
 '''
-    output = Path("assets/language-stack.svg")
+    output = Path("assets/language-stack-custom.svg")
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(svg, encoding="utf-8")
     print(f"Generated {output} with {len(ranked)} languages from {len(repos)} repositories.")
