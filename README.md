@@ -24,7 +24,7 @@ Shapes the short profile story and positioning.
 ## Skills
 
 <p align="center">
-  <img src="assets/language-stack.svg" alt="Top 15 programming languages across my repositories" width="100%" />
+  <img src="assets/language-stack.svg?v=20" alt="Top 15 programming languages across my repositories" width="100%" />
 </p>
 ## GitHub Stats
 GitSkins stat widgets will use the **GitHub** theme.
