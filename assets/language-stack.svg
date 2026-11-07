@@ -1,0 +1,173 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="867" viewBox="0 0 1200 867" role="img" aria-labelledby="title desc">
+  <title id="title">jadhavdurvesh's Language Stack</title>
+  <desc id="desc">Top 15 languages by source-code bytes across owned, non-fork, non-archived repositories.</desc>
+  <defs>
+    <linearGradient id="outer" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#58a6ff" stop-opacity=".35"/>
+      <stop offset=".52" stop-color="#238636" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#a371f7" stop-opacity=".35"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#101722"/><stop offset=".55" stop-color="#0d1715"/><stop offset="1" stop-color="#171322"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="18%" cy="0%" r="80%">
+      <stop offset="0" stop-color="#388bfd" stop-opacity=".23"/><stop offset=".55" stop-color="#238636" stop-opacity=".09"/><stop offset="1" stop-color="#0d1117" stop-opacity="0"/>
+    </radialGradient>
+    <style>
+      text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
+      .heading{fill:#f0f6fc;font-size:38px;font-weight:800;letter-spacing:-1px}
+      .subtitle{fill:#8b949e;font-size:16px;font-weight:700;letter-spacing:1.2px}
+      .scan{fill:#58a6ff;font-size:15px;font-weight:700}
+      .name{fill:#e6edf3;font-size:18px;font-weight:700}
+      .percentage{fill:#c9d1d9;font-size:17px;font-weight:700;font-variant-numeric:tabular-nums}
+      .language{opacity:0;animation:fade .45s ease-out forwards}
+      @keyframes fade{to{opacity:1}}
+    </style>
+  </defs>
+  <rect x="10" y="10" width="1180" height="847" rx="30" fill="url(#outer)" stroke="#388bfd" stroke-opacity=".75"/>
+  <rect x="28" y="28" width="1144" height="811" rx="24" fill="url(#panel)" stroke="#388bfd" stroke-opacity=".42"/>
+  <rect x="28" y="28" width="1144" height="811" rx="24" fill="url(#glow)"/>
+  <circle cx="1115" cy="86" r="4" fill="#58a6ff" opacity=".85"/>
+  <circle cx="1115" cy="86" r="28" fill="none" stroke="#58a6ff" stroke-opacity=".07"/>
+  <text x="62" y="91" class="heading">Language Stack</text>
+  <text x="64" y="123" class="subtitle">Repository-weighted technologies</text>
+  <text x="1120" y="91" class="scan" text-anchor="end">&gt; stack.scan</text>
+  <line x1="62" y1="145" x2="1138" y2="145" stroke="#30363d" stroke-opacity=".75"/>
+  
+  <g class="language" style="animation-delay:0.00s">
+    <circle cx="78" cy="179" r="6" fill="#58a6ff"/>
+    <text x="98" y="185" class="name">Python</text>
+    <text x="350" y="185" class="percentage" text-anchor="end">65.1%</text>
+    <rect x="390" y="171" width="735" height="15" rx="7.5" fill="#30363d"/>
+    <rect x="390" y="171" width="478.6" height="15" rx="7.5" fill="#58a6ff">
+      <animate attributeName="width" from="0" to="478.6" dur=".9s" begin="0.00s" fill="freeze"/>
+    </rect>
+  </g>
+  <g class="language" style="animation-delay:0.05s">
+    <circle cx="78" cy="222" r="6" fill="#f05b3e"/>
+    <text x="98" y="228" class="name">HTML</text>
+    <text x="350" y="228" class="percentage" text-anchor="end">21.6%</text>
+    <rect x="390" y="214" width="735" height="15" rx="7.5" fill="#30363d"/>
+    <rect x="390" y="214" width="158.6" height="15" rx="7.5" fill="#f05b3e">
+      <animate attributeName="width" from="0" to="158.6" dur=".9s" begin="0.05s" fill="freeze"/>
+    </rect>
+  </g>
+  <g class="language" style="animation-delay:0.10s">
+    <circle cx="78" cy="265" r="6" fill="#e3a184"/>
+    <text x="98" y="271" class="name">Rust</text>
+    <text x="350" y="271" class="percentage" text-anchor="end">3.8%</text>
+    <rect x="390" y="257" width="735" height="15" rx="7.5" fill="#30363d"/>
+    <rect x="390" y="257" width="27.9" height="15" rx="7.5" fill="#e3a184">
+      <animate attributeName="width" from="0" to="27.9" dur=".9s" begin="0.10s" fill="freeze"/>
+    </rect>
+  </g>
+  <g class="language" style="animation-delay:0.15s">
+    <circle cx="78" cy="308" r="6" fill="#8bd450"/>
+    <text x="98" y="314" class="name">TeX</text>
+    <text x="350" y="314" class="percentage" text-anchor="end">3.1%</text>
+    <rect x="390" y="300" width="735" height="15" rx="7.5" fill="#30363d"/>
+    <rect x="390" y="300" width="23.0" height="15" rx="7.5" fill="#8bd450">
+      <animate attributeName="width" from="0" to="23.0" dur=".9s" begin="0.15s" fill="freeze"/>
+    </rect>
+  </g>
+  <g class="language" style="animation-delay:0.20s">
+    <circle cx="78" cy="351" r="6" fill="#f1df4f"/>
+    <text x="98" y="357" class="name">JavaScript</text>
+    <text x="350" y="357" class="percentage" text-anchor="end">2.3%</text>
+    <rect x="390" y="343" width="735" height="15" rx="7.5" fill="#30363d"/>
+    <rect x="390" y="343" width="17.0" height="15" rx="7.5" fill="#f1df4f">
+      <animate attributeName="width" from="0" to="17.0" dur=".9s" begin="0.20s" fill="freeze"/>
+    </rect>
+  </g>
+  <g class="language" style="animation-delay:0.25s">
+    <circle cx="78" cy="394" r="6" fill="#3178c6"/>
+    <text x="98" y="400" class="name">TypeScript</text>
+    <text x="350" y="400" class="percentage" text-anchor="end">1.0%</text>
+    <rect x="390" y="386" width="735" height="15" rx="7.5" fill="#30363d"/>
+    <rect x="390" y="386" width="7.6" height="15" rx="7.5" fill="#3178c6">
+      <animate attributeName="width" from="0" to="7.6" dur=".9s" begin="0.25s" fill="freeze"/>
+    </rect>
+  </g>
+  <g class="language" style="animation-delay:0.30s">
+    <circle cx="78" cy="437" r="6" fill="#b084f5"/>
+    <text x="98" y="443" class="name">PLpgSQL</text>
+    <text x="350" y="443" class="percentage" text-anchor="end">0.8%</text>
+    <rect x="390" y="429" width="735" height="15" rx="7.5" fill="#30363d"/>
+    <rect x="390" y="429" width="5.7" height="15" rx="7.5" fill="#b084f5">
+      <animate attributeName="width" from="0" to="5.7" dur=".9s" begin="0.30s" fill="freeze"/>
+    </rect>
+  </g>
+  <g class="language" style="animation-delay:0.35s">
+    <circle cx="78" cy="480" r="6" fill="#00b8a9"/>
+    <text x="98" y="486" class="name">Kotlin</text>
+    <text x="350" y="486" class="percentage" text-anchor="end">0.6%</text>
+    <rect x="390" y="472" width="735" height="15" rx="7.5" fill="#30363d"/>
+    <rect x="390" y="472" width="4.5" height="15" rx="7.5" fill="#00b8a9">
+      <animate attributeName="width" from="0" to="4.5" dur=".9s" begin="0.35s" fill="freeze"/>
+    </rect>
+  </g>
+  <g class="language" style="animation-delay:0.40s">
+    <circle cx="78" cy="523" r="6" fill="#e34c26"/>
+    <text x="98" y="529" class="name">Jupyter Notebook</text>
+    <text x="350" y="529" class="percentage" text-anchor="end">0.3%</text>
+    <rect x="390" y="515" width="735" height="15" rx="7.5" fill="#30363d"/>
+    <rect x="390" y="515" width="3.0" height="15" rx="7.5" fill="#e34c26">
+      <animate attributeName="width" from="0" to="3.0" dur=".9s" begin="0.40s" fill="freeze"/>
+    </rect>
+  </g>
+  <g class="language" style="animation-delay:0.45s">
+    <circle cx="78" cy="566" r="6" fill="#6e7681"/>
+    <text x="98" y="572" class="name">C++</text>
+    <text x="350" y="572" class="percentage" text-anchor="end">0.3%</text>
+    <rect x="390" y="558" width="735" height="15" rx="7.5" fill="#30363d"/>
+    <rect x="390" y="558" width="3.0" height="15" rx="7.5" fill="#6e7681">
+      <animate attributeName="width" from="0" to="3.0" dur=".9s" begin="0.45s" fill="freeze"/>
+    </rect>
+  </g>
+  <g class="language" style="animation-delay:0.50s">
+    <circle cx="78" cy="609" r="6" fill="#f97583"/>
+    <text x="98" y="615" class="name">Dart</text>
+    <text x="350" y="615" class="percentage" text-anchor="end">0.2%</text>
+    <rect x="390" y="601" width="735" height="15" rx="7.5" fill="#30363d"/>
+    <rect x="390" y="601" width="3.0" height="15" rx="7.5" fill="#f97583">
+      <animate attributeName="width" from="0" to="3.0" dur=".9s" begin="0.50s" fill="freeze"/>
+    </rect>
+  </g>
+  <g class="language" style="animation-delay:0.55s">
+    <circle cx="78" cy="652" r="6" fill="#79c0ff"/>
+    <text x="98" y="658" class="name">CSS</text>
+    <text x="350" y="658" class="percentage" text-anchor="end">0.2%</text>
+    <rect x="390" y="644" width="735" height="15" rx="7.5" fill="#30363d"/>
+    <rect x="390" y="644" width="3.0" height="15" rx="7.5" fill="#79c0ff">
+      <animate attributeName="width" from="0" to="3.0" dur=".9s" begin="0.55s" fill="freeze"/>
+    </rect>
+  </g>
+  <g class="language" style="animation-delay:0.60s">
+    <circle cx="78" cy="695" r="6" fill="#d2a8ff"/>
+    <text x="98" y="701" class="name">Go</text>
+    <text x="350" y="701" class="percentage" text-anchor="end">0.1%</text>
+    <rect x="390" y="687" width="735" height="15" rx="7.5" fill="#30363d"/>
+    <rect x="390" y="687" width="3.0" height="15" rx="7.5" fill="#d2a8ff">
+      <animate attributeName="width" from="0" to="3.0" dur=".9s" begin="0.60s" fill="freeze"/>
+    </rect>
+  </g>
+  <g class="language" style="animation-delay:0.65s">
+    <circle cx="78" cy="738" r="6" fill="#ffa657"/>
+    <text x="98" y="744" class="name">Shell</text>
+    <text x="350" y="744" class="percentage" text-anchor="end">0.1%</text>
+    <rect x="390" y="730" width="735" height="15" rx="7.5" fill="#30363d"/>
+    <rect x="390" y="730" width="3.0" height="15" rx="7.5" fill="#ffa657">
+      <animate attributeName="width" from="0" to="3.0" dur=".9s" begin="0.65s" fill="freeze"/>
+    </rect>
+  </g>
+  <g class="language" style="animation-delay:0.70s">
+    <circle cx="78" cy="781" r="6" fill="#a5d6ff"/>
+    <text x="98" y="787" class="name">C</text>
+    <text x="350" y="787" class="percentage" text-anchor="end">0.1%</text>
+    <rect x="390" y="773" width="735" height="15" rx="7.5" fill="#30363d"/>
+    <rect x="390" y="773" width="3.0" height="15" rx="7.5" fill="#a5d6ff">
+      <animate attributeName="width" from="0" to="3.0" dur=".9s" begin="0.70s" fill="freeze"/>
+    </rect>
+  </g>
+  <text x="1125" y="825" text-anchor="end" fill="#6e7681" font-size="12">github.com/jadhavdurvesh</text>
+</svg>
