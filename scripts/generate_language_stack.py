@@ -133,7 +133,7 @@ def main():
   <g class="language" style="animation-delay:{delay:.3f}s">
     <circle cx="{origin + 5}" cy="{y + 5}" r="6" fill="{color}"/>
     <text x="{origin + 22}" y="{y + 11}" class="name">{escape(name)}</text>
-    <text x="{origin + 205}" y="{y + 11}" class="percentage" text-anchor="end">{pct:.2f}%</text>
+    <text x="{origin + 205}" y="{y + 11}" class="percentage" text-anchor="end">{("<0.01%" if pct < 0.01 else f"{pct:.4f}%")}</text>
     <rect x="{bar_x}" y="{y - 3}" width="{bar_w}" height="15" rx="7.5" fill="#30363d"/>
     <rect x="{bar_x}" y="{y - 3}" width="{bar_length:.1f}" height="15" rx="7.5" fill="{color}">
       <animate attributeName="width" from="0" to="{bar_length:.1f}" dur=".9s" begin="{delay:.2f}s" fill="freeze"/>
@@ -186,7 +186,7 @@ def main():
   <text x="1125" y="{height - 42}" text-anchor="end" fill="#6e7681" font-size="12">github.com/{USER}</text>
 </svg>
 '''
-    output = Path("assets/language-stack-custom.svg")
+    output = Path("assets/language-stack-v2.svg")
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(svg, encoding="utf-8")
     print(f"Generated {output} with 22 language entries from {len(repos)} repositories.")
