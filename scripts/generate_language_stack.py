@@ -131,7 +131,7 @@ def main():
         delay = index * 0.045
         bar_x = origin + bar_offset
         # Escape the less-than sign so the percentage remains valid XML text.
-        pct_label = escape("<0.01%") if pct < 0.01 else f"{pct:.4f}%"
+        pct_label = f"{pct:.2f}%"
 
         rows.append(f"""
   <g class="language" style="animation-delay:{delay:.3f}s">
