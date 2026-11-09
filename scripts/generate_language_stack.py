@@ -6,8 +6,9 @@ import time
 import urllib.request
 import urllib.error
 from pathlib import Path
-import cairosvg
 from xml.sax.saxutils import escape
+
+import cairosvg
 
 USER = os.getenv("GITHUB_USERNAME", "jadhavdurvesh")
 TOKEN = os.getenv("GITHUB_TOKEN")
@@ -129,12 +130,14 @@ def main():
         color = colors[index % len(colors)]
         delay = index * 0.045
         bar_x = origin + bar_offset
+        # Escape the less-than sign so the percentage remains valid XML text.
+        pct_label = escape("<0.01%") if pct < 0.01 else f"{pct:.4f}%"
 
         rows.append(f"""
   <g class="language" style="animation-delay:{delay:.3f}s">
     <circle cx="{origin + 5}" cy="{y + 5}" r="6" fill="{color}"/>
     <text x="{origin + 22}" y="{y + 11}" class="name">{escape(name)}</text>
-    <text x="{origin + 205}" y="{y + 11}" class="percentage" text-anchor="end">{("<0.01%" if pct < 0.01 else f"{pct:.4f}%")}</text>
+    <text x="{origin + 205}" y="{y + 11}" class="percentage" text-anchor="end">{pct_label}</text>
     <rect x="{bar_x}" y="{y - 3}" width="{bar_w}" height="15" rx="7.5" fill="#30363d"/>
     <rect x="{bar_x}" y="{y - 3}" width="{bar_length:.1f}" height="15" rx="7.5" fill="{color}">
       <animate attributeName="width" from="0" to="{bar_length:.1f}" dur=".9s" begin="{delay:.2f}s" fill="freeze"/>
@@ -144,7 +147,7 @@ def main():
     height = top + COLUMN_SIZE * row_h + 48
 
     svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title desc">
-  <title id="title">{USER}'s Language Stack</title>
+  <title id="title">{escape(USER)}'s Language Stack</title>
   <desc id="desc">Top 20 repository languages plus DMJScript and Rudra, measured by source bytes and displayed in two columns.</desc>
   <defs>
     <linearGradient id="outer" x1="0" y1="0" x2="1" y2="1">
@@ -184,7 +187,7 @@ def main():
   <line x1="62" y1="145" x2="1138" y2="145" stroke="#30363d" stroke-opacity=".75"/>
   <line x1="600" y1="164" x2="600" y2="{height - 58}" stroke="#30363d" stroke-opacity=".65"/>
   {''.join(rows)}
-  <text x="1125" y="{height - 42}" text-anchor="end" fill="#6e7681" font-size="12">github.com/{USER}</text>
+  <text x="1125" y="{height - 42}" text-anchor="end" fill="#6e7681" font-size="12">github.com/{escape(USER)}</text>
 </svg>
 '''
     output = Path("assets/language-stack-v2.svg")
