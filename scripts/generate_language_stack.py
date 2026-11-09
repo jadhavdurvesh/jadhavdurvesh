@@ -6,6 +6,7 @@ import time
 import urllib.request
 import urllib.error
 from pathlib import Path
+import cairosvg
 from xml.sax.saxutils import escape
 
 USER = os.getenv("GITHUB_USERNAME", "jadhavdurvesh")
@@ -189,7 +190,9 @@ def main():
     output = Path("assets/language-stack-v2.svg")
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(svg, encoding="utf-8")
-    print(f"Generated {output} with 22 language entries from {len(repos)} repositories.")
+    png_output = Path("assets/language-stack-v2.png")
+    cairosvg.svg2png(bytestring=svg.encode("utf-8"), write_to=str(png_output), output_width=1200)
+    print(f"Generated {output} and {png_output} with 22 language entries from {len(repos)} repositories.")
 
 
 if __name__ == "__main__":
