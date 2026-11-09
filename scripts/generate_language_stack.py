@@ -172,8 +172,7 @@ def main():
       .scan{{fill:#58a6ff;font-size:15px;font-weight:700}}
       .name{{fill:#e6edf3;font-size:16px;font-weight:700}}
       .percentage{{fill:#c9d1d9;font-size:15px;font-weight:700;font-variant-numeric:tabular-nums}}
-      .language{{opacity:0;animation:fade .45s ease-out forwards}}
-      @keyframes fade{{to{{opacity:1}}}}
+      .language{{opacity:1}}
     </style>
   </defs>
   <rect x="10" y="10" width="1180" height="{height - 20}" rx="30" fill="url(#outer)" stroke="#388bfd" stroke-opacity=".75"/>
