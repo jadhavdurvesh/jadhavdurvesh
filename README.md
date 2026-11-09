@@ -24,7 +24,7 @@ Shapes the short profile story and positioning.
 ## Skills
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/jadhavdurvesh/jadhavdurvesh/main/assets/language-stack-v2.svg?v=2" alt="22 programming languages including DMJScript and Rudra, measured from source code" width="100%" />
+  <img src="./assets/language-stack-v2.png" alt="22 programming languages including DMJScript and Rudra" width="100%" />
 </p>
 ## GitHub Stats
 GitSkins stat widgets will use the **GitHub** theme.
