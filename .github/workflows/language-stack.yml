@@ -29,7 +29,9 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.x"
-      - name: Generate language stack SVG
+      - name: Install SVG renderer
+        run: pip install cairosvg
+      - name: Generate language stack SVG and PNG
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_USERNAME: jadhavdurvesh
@@ -39,7 +41,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/language-stack-v2.svg
+          git add assets/language-stack-v2.svg assets/language-stack-v2.png
           git rm -f assets/language-stack-custom.svg 2>/dev/null || true
 
           if git diff --cached --quiet; then
@@ -51,7 +53,7 @@ jobs:
 
           for attempt in 1 2 3; do
             if git push origin HEAD:main; then
-              echo "Generated language stack pushed successfully."
+              echo "Generated language stack SVG and PNG pushed successfully."
               exit 0
             fi
 
