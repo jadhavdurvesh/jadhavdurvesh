@@ -1,4 +1,4 @@
-name: Update language stack
+name: Update language stack # builds SVG and PNG profile assets
 
 on:
   schedule:
