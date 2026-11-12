@@ -44,6 +44,10 @@ Highlights repositories as proof of work.
 </p>
 ## Heatmap
 Animated year-long contribution calendar.
+
+<p align="center">
+  <img src="./profile-3d-contrib/profile-green-animate.svg" alt="3D GitHub contribution calendar" width="100%" />
+</p>
 ## Connect
 Contact and social links will appear here.
 <p align="center">
