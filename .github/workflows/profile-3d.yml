@@ -4,6 +4,10 @@ on:
   schedule:
     - cron: "20 18 * * *"
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/profile-3d.yml"
 
 permissions:
   contents: write
@@ -33,6 +37,13 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if [ ! -s profile-3d-contrib/profile-green-animate.svg ]; then
+            echo "::error::Expected 3D contribution SVG was not generated."
+            find profile-3d-contrib -maxdepth 2 -type f -print 2>/dev/null || true
+            exit 1
+          fi
+
           git add profile-3d-contrib/
 
           if git diff --cached --quiet; then
