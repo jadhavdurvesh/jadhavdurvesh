@@ -46,7 +46,7 @@ Highlights repositories as proof of work.
 Animated year-long contribution calendar.
 
 <p align="center">
-  <img src="./profile-3d-contrib/profile-green-animate.svg" alt="3D GitHub contribution calendar" width="100%" />
+  <img src="./profile-3d-contrib/profile-night-view.svg" alt="3D GitHub contribution calendar — night city theme" width="100%" />
 </p>
 ## Connect
 Contact and social links will appear here.
