@@ -41,19 +41,19 @@
   <g class="language" style="animation-delay:0.000s">
     <circle cx="67" cy="179" r="6" fill="#58a6ff"/>
     <text x="84" y="185" class="name">Python</text>
-    <text x="267" y="185" class="percentage" text-anchor="end">62.32%</text>
+    <text x="267" y="185" class="percentage" text-anchor="end">62.24%</text>
     <rect x="282" y="171" width="300" height="15" rx="7.5" fill="#30363d"/>
-    <rect x="282" y="171" width="186.9" height="15" rx="7.5" fill="#58a6ff">
-      <animate attributeName="width" from="0" to="186.9" dur=".9s" begin="0.00s" fill="freeze"/>
+    <rect x="282" y="171" width="186.7" height="15" rx="7.5" fill="#58a6ff">
+      <animate attributeName="width" from="0" to="186.7" dur=".9s" begin="0.00s" fill="freeze"/>
     </rect>
   </g>
   <g class="language" style="animation-delay:0.045s">
     <circle cx="67" cy="222" r="6" fill="#f05b3e"/>
     <text x="84" y="228" class="name">HTML</text>
-    <text x="267" y="228" class="percentage" text-anchor="end">19.82%</text>
+    <text x="267" y="228" class="percentage" text-anchor="end">19.79%</text>
     <rect x="282" y="214" width="300" height="15" rx="7.5" fill="#30363d"/>
-    <rect x="282" y="214" width="59.5" height="15" rx="7.5" fill="#f05b3e">
-      <animate attributeName="width" from="0" to="59.5" dur=".9s" begin="0.04s" fill="freeze"/>
+    <rect x="282" y="214" width="59.4" height="15" rx="7.5" fill="#f05b3e">
+      <animate attributeName="width" from="0" to="59.4" dur=".9s" begin="0.04s" fill="freeze"/>
     </rect>
   </g>
   <g class="language" style="animation-delay:0.090s">
@@ -68,7 +68,7 @@
   <g class="language" style="animation-delay:0.135s">
     <circle cx="67" cy="308" r="6" fill="#8bd450"/>
     <text x="84" y="314" class="name">JavaScript</text>
-    <text x="267" y="314" class="percentage" text-anchor="end">3.43%</text>
+    <text x="267" y="314" class="percentage" text-anchor="end">3.42%</text>
     <rect x="282" y="300" width="300" height="15" rx="7.5" fill="#30363d"/>
     <rect x="282" y="300" width="10.3" height="15" rx="7.5" fill="#8bd450">
       <animate attributeName="width" from="0" to="10.3" dur=".9s" begin="0.14s" fill="freeze"/>
@@ -86,10 +86,10 @@
   <g class="language" style="animation-delay:0.225s">
     <circle cx="67" cy="394" r="6" fill="#3178c6"/>
     <text x="84" y="400" class="name">C</text>
-    <text x="267" y="400" class="percentage" text-anchor="end">1.64%</text>
+    <text x="267" y="400" class="percentage" text-anchor="end">1.77%</text>
     <rect x="282" y="386" width="300" height="15" rx="7.5" fill="#30363d"/>
-    <rect x="282" y="386" width="4.9" height="15" rx="7.5" fill="#3178c6">
-      <animate attributeName="width" from="0" to="4.9" dur=".9s" begin="0.22s" fill="freeze"/>
+    <rect x="282" y="386" width="5.3" height="15" rx="7.5" fill="#3178c6">
+      <animate attributeName="width" from="0" to="5.3" dur=".9s" begin="0.22s" fill="freeze"/>
     </rect>
   </g>
   <g class="language" style="animation-delay:0.270s">
@@ -113,7 +113,7 @@
   <g class="language" style="animation-delay:0.360s">
     <circle cx="67" cy="523" r="6" fill="#e34c26"/>
     <text x="84" y="529" class="name">Kotlin</text>
-    <text x="267" y="529" class="percentage" text-anchor="end">0.58%</text>
+    <text x="267" y="529" class="percentage" text-anchor="end">0.57%</text>
     <rect x="282" y="515" width="300" height="15" rx="7.5" fill="#30363d"/>
     <rect x="282" y="515" width="3.0" height="15" rx="7.5" fill="#e34c26">
       <animate attributeName="width" from="0" to="3.0" dur=".9s" begin="0.36s" fill="freeze"/>
